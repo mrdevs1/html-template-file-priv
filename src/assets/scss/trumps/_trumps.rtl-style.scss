@@ -1,0 +1,259 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+.navbar-brand{
+  margin-right: 0;
+}
+.main-link-toggle{
+  &:after{
+    margin-right: 0.4rem;
+  }
+}
+.sub-link-toggle{
+  &:after{
+    margin-left: .04rem;
+    margin-right:auto;
+    transform: rotate(-905deg);
+  }
+}
+.hs-sub-menu{
+  right: 0;
+  left: auto;
+}
+.menu-item-wrap.p-4 {
+  padding-right: 35px !important;
+}
+.submenu-item a{
+  border-left: none;
+  border-right: 2px solid transparent;
+}
+.hs-sub-menu .hs-sub-menu{
+  right: 100%;
+}
+.custom-radius-right{
+  border-radius: 10px 0 0 10px;
+}
+.menu-item-icon{
+  margin-right: auto;
+  margin-left: 0.75rem;
+}
+@media (min-width: 768px){
+  .navbar-expand-md .main-navbar-nav .header-nav-last-item {
+    text-align: left;
+    padding-right: auto;
+    padding-left:0;
+  }
+}
+@media (max-width: 767.98px){
+  .navbar-expand-md .main-link-toggle::after, .navbar-expand-md .sub-link-toggle::after{
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+//hero section
+.headline{
+  padding: 0 0 0 15px;
+}
+
+//domain search
+.domain-search-form .select-group{
+  left: 10px;
+  right: auto;
+  button[type=submit]{
+    margin-right: 5px;
+    margin-left: auto;
+  }
+}
+
+//client review
+
+.single-review-wrap .review-author {
+  margin-right: 15px;
+  margin-left: auto;
+  span{
+    left: auto;
+    right: -16px;
+  }
+  .author-avatar{
+    margin-left: 10px;
+  }
+}
+
+//pricing
+.vps-pricing-row > td:first-child{
+  border-right: 3px solid rgba(93, 118, 174, 0.15);
+  border-left: none;
+}
+.vps-pricing-row:hover td {
+  border-color: $color-primary;
+}
+.vps-hosting-pricing-table-two .vps-pricing-row > td:last-child{
+  border-left: 2px solid rgba(93, 118, 174, 0.15);
+}
+.domain-search-result-table{
+  .vps-pricing-row{
+    &:hover{
+      td{
+        &:last-child{
+          border-right: none;
+        }
+      }
+    }
+    td{
+      &:first-child{
+        text-align: right;
+      }
+      &:last-child{
+        text-align: left;
+      }
+    }
+  }
+}
+
+//feature
+ul.disc-style{
+  padding: 0 18px 0 0;
+}
+
+.big-price-wrap span.regular-price{
+  left: auto;
+  right: 20%;
+}
+//domain search
+.domain-transfer-form input.form-control{
+  border: none;
+}
+.single-popular-domain span.badge{
+  left: 10%;
+  right: auto;
+}
+//contact us
+.contact-us-content{
+  right: auto;
+  left: -33%;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .contact-us-content{
+    width: auto;
+    left: 0;
+    right: 0;
+    position: inherit;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .contact-us-content{
+    left: -53%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .contact-us-content{
+    left: -35%;
+  }
+}
+
+//about
+.dot-circle li{
+  padding-right: 25px;
+}
+.dot-circle li:before{
+  right: 0;
+}
+.check-list-wrap.list-two-col li{
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.check-list-wrap li {
+  padding: .5rem 1.875rem .5rem 0;
+}
+.check-list-wrap li:before{
+  right: 0;
+}
+
+
+.work-process-wrap .process-icon-item svg{
+  display: none;
+}
+
+.support-cta h5 span{
+  margin-right: 1rem;
+}
+
+.faq-wrap .card .card-header:after{
+  float: left;
+}
+
+.testimonial-content-wrap .testimonial-shape .testimonial-quote-wrap .author-info .media-body{
+  right: 120px;
+}
+
+.newsletter-form button{
+  left: 4px;
+  right: auto;
+}
+.newsletter-form .input-newsletter{
+  padding-left: auto;
+  padding-right: 25px;
+}
+
+
+.shape-image{
+  right: 268px;
+  left: 0;
+}
+.shape-img-2{
+  right: 0;
+  left: auto;
+}
+
+.group-shape-2{
+  right: 9.2vw;
+}
+.custom-breadcrumb ol li.breadcrumb-item{
+  padding-right: 0;
+}
+.widget-search .search-button{
+  right: auto;
+  left: .875rem;
+}
+.widget-recent-entries-custom .wi{
+  float: right;
+}
+.widget-recent-entries-custom .wb{
+  padding-right: 16px;
+  padding-left: 0;
+}
+.widget a{
+  text-align: right;
+}
+.post-meta > li {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 14px;
+  margin: 0 0 0 14px;
+}
+.post-meta > li:not(:last-child):after{
+  left: -5px;
+}
+.post-content blockquote{
+  border-right: 2px solid $border-color;
+  padding: 10px 40px 10px 0;
+  border-left: none;
+}
+.post-content ul, .post-content ol {
+  margin: 15px 40px 15px 0;
+}
+.single-blog-article .border-shape:before{
+  left: auto;
+  right: 0;
+}
+.comment-reply{
+  right: auto;
+  left: 0;
+}
+.login-signup-form .form-group .input-group .input-icon{
+  right: 0;
+  position: inherit;
+}

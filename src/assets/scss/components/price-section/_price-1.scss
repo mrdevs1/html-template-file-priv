@@ -1,0 +1,707 @@
+//pricing style
+
+//pricing package
+.single-pricing-pack{
+  transition: all 0.2s ease 0s;
+  display: block;
+  overflow: hidden;
+  border: none;
+  border-radius: 1rem;
+  .pricing-header{
+    padding: 30px;
+    background: $color-ui-02;
+    h6{
+      opacity: .8;
+      font-size: 14px;
+    }
+    .price{
+      font-size: 40px;
+      line-height: 45px;
+      font-weight: $font-weight-bold;
+      font-family: $headings-font-family;
+      span{
+        font-size: 20px;
+        vertical-align: text-top;
+        padding-right: 2px;
+      }
+      small{
+        font-size: 20px;
+        font-weight: $font-weight-medium;
+      }
+    }
+    .p-month{
+      font-size: 14px;
+    }
+  }
+  .pricing-content{
+    flex: 1 1 auto;
+    padding: 25px 40px;
+    .pricing-feature-list{
+      li{
+        i{
+          font-size: 12px;
+        }
+        .icon-check{
+          color: $success;
+        }
+        .icon-cancel{
+          color: $danger;
+        }
+        font-size: 15px;
+        line-height: 30px;
+        span{
+          font-weight: $font-weight-bold;
+          font-family: $headings-font-family;
+          color: darken($body-color, 15%);
+        }
+        .text-under-line{
+          border-bottom: 1px solid darken($border-color, 35%);
+        }
+      }
+      li.text-deem{
+        opacity: $opacity-5;
+      }
+    }
+  }
+  &.popular-price{
+    .pricing-header{
+      background: $color-primary;
+      h6{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//pricing package two
+.single-pricing-pack-2{
+  padding: 45px 32px;
+  .pricing-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    margin: 0 auto 32px;
+  }
+  .package-title{
+    font-weight: $font-weight-normal;
+  }
+  .pricing-price{
+    position: relative;
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 32px;
+      margin-left: -16px;
+      background: $color-primary;
+    }
+    small{
+      color: lighten($body-color, 50%);
+    }
+    .price-cycle{
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+.feature-price{
+  position: relative;
+  overflow: hidden;
+  .package-featured .label-corner {
+    top: -15px;
+    right: 15px;
+    left: auto;
+    transform: rotate(45deg) translateX(50%);
+  }
+
+  .label-corner {
+    top: 16px;
+    right: -25px;
+    width: 100px;
+    position: absolute;
+    max-height: 19px;
+    font-size: 11px;
+    padding: 4px;
+    color: $white;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.price-2{
+  .pricing-price{
+    &:after{
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+.card.single-pricing-pack {
+  transition: all 0.2s ease 0s;
+  box-shadow: 0 0 0 1px $border-color;
+  border-radius: 1rem !important;
+}
+
+.card.single-pricing-pack:hover {
+  z-index: 2;
+}
+
+
+.single-pricing-pack .card-body {
+  color: rgb(132, 146, 166);
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+.single-pricing-pack .card-body.px-5{
+  padding-left: 3.5rem!important;
+  padding-right: 3.5rem!important;
+}
+.pricing-header {
+  position: relative;
+  background: transparent;
+}
+
+.pricing-header .price {
+  font-size: 35px;
+}
+
+.pricing-header .price span {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.pricing-header::after {
+  content: "";
+  display: block;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40%;
+  height: 1px;
+  background: radial-gradient(at center center, rgb(222, 228, 239) 0px, rgba(255, 255, 255, 0) 75%);
+}
+
+.pricing-feature-list li {
+  font-size: 15px;
+  line-height: 32px;
+  color: lighten($body-color, 30%);
+}
+
+.pricing-feature-list li i{
+  font-size: 14px;
+}
+.single-pricing-pack li.del{
+  opacity: 0.7;
+}
+.pricing-feature-list li span {
+  font-weight: $font-weight-bold;
+  font-family: $headings-font-family;
+  color: $body-color;
+  font-size: 15px;
+}
+
+/*pricing switch style*/
+
+.yearly-price {
+  display: none;
+}
+
+.switch-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.form-switch {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  justify-content: space-between;
+}
+
+.form-switch span {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: $font-weight-bold;
+  font-family: $headings-font-family
+}
+
+.form-switch .switch-icon {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 25px;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  margin: 0 15px;
+  background: $white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.form-switch .switch-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 17px;
+  background-color: $color-primary;
+  border-radius: 15px;
+  transform: translate3d(4px, 3px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-switch input {
+  display: none;
+}
+
+.form-switch input:checked + .switch-icon::after {
+  transform: translate3d(29px, 3px, 0);
+}
+
+.form-switch .beforeinput.text-success, .form-switch .afterinput.text-success {
+  color: $color-primary !important;
+}
+
+/*compare pricing table*/
+.table-bordered.comparision-table thead td, .comparision-table.table-bordered thead th {
+  border-bottom-width: 1px;
+}
+
+.comparision-price {
+  font-weight: 700;
+}
+
+.comparision-price span {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.comparision-table-body tr > td {
+  font-size: 13px;
+  padding: 6px;
+  min-width: 180px;
+}
+
+.comparision-table-body tr > td p {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+/*domain hosting provider compare table*/
+td.td-blank {
+  border: none !important;
+}
+
+.provider-logo img {
+  display: inline-block;
+  max-width: 100px;
+  min-height: 13px;
+  max-height: 34px;
+}
+
+
+//vps pricing
+
+.offer-block{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.offer-block:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: url('../img/offer-bg.png')no-repeat center center / cover;
+}
+
+.vps-hosting-pricing-table {
+  overflow: visible;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-collapse: unset;
+  border-spacing: 0 10px;
+}
+.domain-search-result-table{
+  tr.vps-pricing-row {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.05);
+    td{
+     p{
+       margin-bottom: 0;
+     }
+    }
+  }
+
+}
+.vps-hosting-pricing-table > thead {
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.vps-hosting-pricing-table.vps-hosting-pricing-table-two {
+  border-collapse: collapse;
+}
+
+.vps-hosting-pricing-table > thead > tr > th {
+  border: none;
+  font-size: 12px;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: $headings-font-family
+}
+
+.vps-pricing-row {
+  text-align: left;
+  background-color: $white;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.vps-pricing-row > td:first-child {
+  border-left: 2px solid transparent;
+  border-radius: 2px 0 0 2px;
+}
+.vps-pricing-row> td:first-child{
+  border-left: 3px solid $border-color;
+}
+.vps-pricing-row:hover td{
+  border-color: $color-primary;
+}
+.vps-pricing-row > td:last-child {
+  border-right: 2px solid transparent;
+  border-radius: 0 2px 2px 0;
+  text-align: right;
+}
+.vps-hosting-pricing-table-two > thead{
+  border: 2px solid $border-color;
+  border-top: none;
+  background: $color-ui-02;
+}
+.vps-hosting-pricing-table-two .vps-pricing-row{
+  border: 2px solid $border-color;
+  border-left: 2px solid transparent;
+}
+.vps-hosting-pricing-table-two .vps-pricing-row > td:last-child {
+  border-right: initial;
+}
+
+.vps-hosting-pricing-table > tbody > tr > td {
+  padding: 20px 20px;
+  border-right: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.vps-hosting-pricing-table.domain-search-result-table > tbody > tr > td{
+  font-size: 14px;
+}
+.vps-pricing-row > td {
+  border: none;
+}
+
+.vps-hosting-pricing-table .rate {
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  color: $color-accent;
+  font-family: $headings-font-family;
+}
+
+.vps-hosting-pricing-table .rate span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 5px;
+  opacity: 0.8;
+  color: $color-ui-04;
+}
+
+.vps-hosting-pricing-table .score-bar-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vps-hosting-pricing-table .geekbench-score {
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+.vps-hosting-pricing-table .score-bar-wrap .score-bar-item {
+  min-width: 40px;
+  height: 14px;
+  font-size: 55%;
+  border-radius: 30px;
+  font-weight: $font-weight-regular;
+  background-color: $color-ui-02;
+  position: relative;
+}
+
+.vps-hosting-pricing-table .pricing-onsale, .vps-hosting-pricing-table .cpu-core {
+  display: block;
+  font-size: 14px;
+  color: $color-ui-04;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.vps-hosting-pricing-table > tbody > tr > td:first-child::before {
+  content: attr(data-value);
+  display: none;
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  position: relative;
+  left: initial;
+  top: initial;
+  opacity: 1;
+}
+
+.vps-pricing-row > td:before {
+  content: attr(data-value);
+  display: none;
+}
+
+table > tbody > tr > td:first-child:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: $color-secondary;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (max-width: 991px) {
+  .vps-hosting-pricing-table > thead {
+    display: none;
+  }
+
+  .vps-pricing-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 45%;
+    float: left;
+    margin: 0 15px 28px 15px;
+  }
+
+  .vps-hosting-pricing-table > tbody > tr{
+    padding: 15px;
+  }
+  .vps-hosting-pricing-table > tbody > tr > td {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .vps-pricing-row:hover.border-accent-primary > td:first-child {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-left: none;
+  }
+
+  .vps-pricing-row > td:first-child {
+    border-left: none;
+    border-radius: 0;
+  }
+
+  .vps-hosting-pricing-table > tbody > tr > td:first-child::before {
+    display: block;
+    width: 45%;
+  }
+
+  .vps-pricing-row > td:before {
+    display: block;
+    width: 45%;
+  }
+
+  .vps-hosting-pricing-table > tbody > tr > td {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .vps-pricing-row > td:last-child::before {
+    display: none;
+  }
+
+  .vps-pricing-row > td:last-child {
+    text-align: center !important;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .vps-pricing-row {
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .vps-pricing-row td a.primary-solid-btn{
+    padding: 8px 12px !important;
+  }
+}
+
+
+/*====================================
+       06. CUSTOM VPS PLAN CSS
+======================================*/
+.vps-switch-wrap{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.custom-plan-box {
+  padding: 12px 25px;
+}
+.custom-plan-box .slider .tooltip.top{
+  display: none;
+}
+.custom-plan-info-box{
+  padding: 34px;
+}
+
+.single-vps-item{
+  width: 100%;
+  display: block;
+  padding: 15px;
+  min-width: 298px;
+}
+
+.custom-vps-list li{
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .custom-vps-list li{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .single-vps-item{
+    padding: 12px 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px){
+  .custom-plan-box{
+    margin-bottom: 15px;
+  }
+  .custom-vps-list li{
+    width: 100%;
+  }
+  .custom-vps-list li.list-inline-item:not(:last-child){
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px){
+  .single-vps-item{
+    min-width: 210px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px){
+  .single-vps-item{
+    min-width: 245px;
+  }
+}
+
+.custom-plan-box .slider .tooltip.top .tooltip-arrow {
+  border: 0;
+}
+
+.custom-plan-box .slider.slider-horizontal {
+  width: 100%;
+}
+
+.custom-plan-box .slider.slider-horizontal .slider-track {
+  height: 10px;
+}
+
+.custom-plan-box .slider-selection {
+  background: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: $color-primary;
+}
+
+.custom-plan-box .slider-track {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: $border-color;
+  position: relative;
+}
+
+.custom-plan-box .slider-handle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -3px;
+  background: none;
+  background-color: $white;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+  border: 8px solid $color-primary;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-plan-box .slider-handle:hover, .custom-plan-box .slider-handle:focus {
+  background-color: $color-ui-01;
+  border: 8px solid $color-primary;
+}

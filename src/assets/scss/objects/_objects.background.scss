@@ -1,0 +1,160 @@
+.color-primary{
+  color: $color-primary !important;
+}
+.color-secondary{
+  color: $color-secondary !important;
+}
+.color-accent{
+  color: $color-accent !important;
+}
+.gray-light-bg{
+  background: $color-ui-01 !important;
+}
+
+.primary-bg{
+  background: $color-primary !important;
+}
+.secondary-bg{
+  background: $color-secondary !important;
+}
+.accent-bg{
+  background: $color-accent !important;
+}
+
+.gradient-bg {
+  background: linear-gradient(75deg, darken($color-primary, 10%), darken($color-secondary, 10%)) !important;
+}
+
+
+//other brand color
+.facebook-color{
+  color: $facebook-color;
+}
+.twitter-color{
+  color: $twitter-color;
+}
+.vk-color{
+  color: $vk-color;
+}
+.googleplus-color{
+  color: $googleplus-color;
+}
+.instagram-color{
+  color: $instagram-color;
+}
+.pinterest-color{
+  color: $pinterest-color;
+}
+.dribbble-color{
+  color: $dribbble-color;
+}
+.behance-color{
+  color: $behance-color;
+}
+.flickr-color{
+  color: $flickr-color;
+}
+.tumblr-color{
+  color: $tumblr-color;
+}
+.linkedin-color{
+  color: $linkedin-color;
+}
+.youtube-color{
+  color: $youtube-color;
+}
+.vimeo-color{
+  color: $vimeo-color;
+}
+.stumbleupon-color{
+  color: $stumbleupon-color;
+}
+.digg-color{
+  color: $digg-color;
+}
+.rss-color{
+  color: $rss-color;
+}
+.skype-color{
+  color: $skype-color;
+}
+.dropbox-color{
+  color: $dropbox-color;
+}
+.github-color{
+  color: $github-color;
+}
+.gitlab-color{
+  color: $gitlab-color;
+}
+.reddit-color{
+  color: $reddit-color;
+}
+
+//other brand bg color
+
+.facebook-bg{
+  background: $facebook-color;
+}
+.twitter-bg{
+  background: $twitter-color;
+}
+.vk-bg{
+  background: $vk-color;
+}
+.googleplus-bg{
+  background: $googleplus-color;
+}
+.instagram-bg{
+  background: $instagram-color;
+}
+.pinterest-bg{
+  background: $pinterest-color;
+}
+.dribbble-bg{
+  background: $dribbble-color;
+}
+.behance-bg{
+  background: $behance-color;
+}
+.flickr-bg{
+  background: $flickr-color;
+}
+.tumblr-bg{
+  background: $tumblr-color;
+}
+.linkedin-bg{
+  background: $linkedin-color;
+}
+.youtube-bg{
+  background: $youtube-color;
+}
+.vimeo-bg{
+  background: $vimeo-color;
+}
+.stumbleupon-bg{
+  background: $stumbleupon-color;
+}
+.digg-bg{
+  background: $digg-color;
+}
+.rss-bg{
+  background: $rss-color;
+}
+.skype-bg{
+  background: $skype-color;
+}
+.dropbox-bg{
+  background: $dropbox-color;
+}
+.github-bg{
+  background: $github-color;
+}
+.gitlab-bg{
+  background: $gitlab-color;
+}
+.reddit-bg{
+  background: $reddit-color;
+}
+
+

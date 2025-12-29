@@ -1,0 +1,118 @@
+/* promo-card.css — Scoped / Isolated CSS for promo card */
+
+.promo-container {
+  /* background বা padding দেয়ার প্রয়োজন হলে দিলেও হবে */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.promo-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  animation: slideUp 0.9s ease forwards;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.promo-card .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a3d8f;
+  margin-bottom: 10px;
+}
+
+.promo-card .subtitle {
+  font-size: 15px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.promo-card .price-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  color: #0d1e43;
+  margin-bottom: 22px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.promo-card .price-box .currency {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.promo-card .price-box .amount {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.promo-card .price-box .cycle {
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+
+.promo-card .features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 1.8rem;
+  color: #222222;
+  padding-left: 0;
+}
+
+.promo-card .features li {
+  padding-left: 5px;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.promo-card .cta-btn {
+  display: inline-block;
+  background: #4b79ff;
+  color: #ffffff;
+  padding: 14px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 18px rgba(75, 121, 255, 0.3);
+}
+
+.promo-card .cta-btn:hover {
+  background: #3756e3;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(75, 121, 255, 0.45);
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .promo-card {
+    padding: 25px;
+  }
+  .promo-card .title {
+    font-size: 24px;
+  }
+  .promo-card .price-box .amount {
+    font-size: 42px;
+  }
+}

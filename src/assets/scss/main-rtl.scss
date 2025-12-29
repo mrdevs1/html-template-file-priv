@@ -1,0 +1,37 @@
+/*
+* Kohost v1.0.0 (https://themeforest.net/user/themetags)
+* Copyright 2020 Themetags
+* Licensed under ThemeForest License
+*/
+
+
+
+//setting
+@import "settings/main";
+
+//function
+@import "functions/main";
+
+//bootstrap rtl
+@import "vendors/main-rtl";
+
+//Generic
+@import "generic/main";
+
+//elements
+@import "elements/main";
+
+//objects
+@import "objects/main-rtl";
+
+//Third party plugins css.
+@import "vendors/main";
+
+//Components and widgets.
+@import "components/main";
+
+//Components and widgets.
+@import "components/main-rtl";
+
+//Helper classes and overrides.
+@import "trumps/main-rtl";

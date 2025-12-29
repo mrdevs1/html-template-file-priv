@@ -1,0 +1,47 @@
+.single-blog-article{
+  .article-heading{
+    span {
+      font-size: 12px;
+      color: $color-ui-04;
+    }
+  }
+  .border-shape{
+    width: 100px;
+    height: 2px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    &:before{
+      content : "";
+      position: absolute;
+      left    : 0;
+      bottom  : 0;
+      height  : 2px;
+      width   : 50%;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+  p{
+    color: $body-color;
+  }
+  .article-footer{
+    .article-comments, .article-user{
+      font-size: 12px;
+      color: $color-ui-04;
+    }
+    .article-user{
+      span{
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        background: $color-secondary;
+        color: $white;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+
+//blog with image grid

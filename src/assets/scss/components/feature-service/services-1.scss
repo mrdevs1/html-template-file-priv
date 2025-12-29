@@ -1,0 +1,9 @@
+.single-service{
+  margin-top: 30px;
+  .service-header{
+    span.h5{
+      font-size: 14px;
+      color: lighten($headings-color, 40%);
+    }
+  }
+}

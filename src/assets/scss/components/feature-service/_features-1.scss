@@ -1,0 +1,124 @@
+//features section css
+
+.features-single-wrap{
+  span{
+    font-size: 24px;
+    color: $color-secondary;
+    background: lighten($color-secondary, 35%);
+  }
+}
+
+
+
+
+/*feature box css*/
+.features-box {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+}
+.features-box-content p:last-child{
+  margin-bottom: 0;
+}
+ul.disc-style {
+  list-style-type: disc;
+  padding: 0 0 0 18px;
+}
+
+ul.disc-style li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+//popular domain list
+
+.single-popular-domain img {
+  display: inline-block;
+  max-width: 100px;
+  min-height: 13px;
+  max-height: 34px;
+}
+
+.single-popular-domain span.badge {
+  right: 10%;
+  top: 10%;
+}
+
+.domain-price-list .domain-old-price {
+  font-size: 15px;
+  font-weight: $font-weight-medium;
+  opacity: 0.7;
+}
+
+.domain-price-list .domain-new-price {
+  font-size: 22px;
+  line-height: initial;
+  font-weight: $font-weight-bold;
+}
+
+//domain list
+.domain-list {
+  position: relative;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-auto-flow: dense;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.custom-shadow{
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in;
+  border-radius: 1.5rem !important;
+}
+.custom-shadow:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(31,45,61,.125)!important;
+}
+.domain-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+  border-radius: 1rem;
+  border: 1px solid $border-color;
+}
+
+.domain-list li a {
+  padding: 15px;
+}
+@media (min-width: 320px) and (max-width: 1199px){
+  .domain-list li{
+    margin-bottom: 0 !important;
+  }
+}
+.single-domain img {
+  display: inline-block;
+  max-width: 100px;
+  min-height: 13px;
+  max-height: 34px;
+}
+
+.domain-price h6 {
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0;
+}
+
+.domain-price h6 span.badge {
+  font-size: 10px;
+  padding: 1px 4px;
+}
+
+.old-price {
+  color: #757575;
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  opacity: .7;
+  text-decoration: line-through;
+}

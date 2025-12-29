@@ -1,0 +1,5 @@
+{
+    "check_referer": false,
+    "check_device": false,
+    "check_location": true
+}

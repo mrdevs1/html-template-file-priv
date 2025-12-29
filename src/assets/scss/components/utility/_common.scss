@@ -1,0 +1,39 @@
+//count down css
+
+
+.countdown-wrap{
+  .row{
+    .col{
+      margin: 10px;
+      text-align: center;
+      padding: 15px;
+      background: $white;
+      border-radius: 1rem;
+      h2{
+        font-weight: $font-weight-bold;
+        margin-bottom: 5px;
+      }
+      h2, h5{
+        color: $color-primary !important;
+      }
+    }
+  }
+}
+.countdown-wrap-2{
+  .row{
+    .col{
+      text-align: center;
+      padding: 8px;
+      h2{
+        font-weight: $font-weight-bold;
+        margin-bottom: 5px;
+      }
+      h5{
+        font-weight: $font-weight-normal;
+      }
+      h2, h5{
+        color: $white !important;
+      }
+    }
+  }
+}

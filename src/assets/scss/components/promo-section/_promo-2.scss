@@ -1,0 +1,50 @@
+.single-promo-card{
+  border-radius: 1rem;
+  transition: $global-transition;
+  &.single-promo-hover{
+    transition: $global-transition;
+    overflow: hidden;
+    z-index: 1;
+    &:hover{
+      color: $white;
+      span, h5{
+        color: $white !important;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background-color: $color-primary;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      right: -55px;
+      width: 95px;
+      height: 95px;
+      bottom: -50px;
+      border-radius: 35px;
+      background-color: $color-primary;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      z-index: -1;
+    }
+  }
+  &.single-promo-hover-2{
+    transition: $global-transition;
+    &:hover{
+      background-color: $color-primary;
+      color: $white;
+      span, h5{
+        color: $white !important;
+      }
+    }
+  }
+
+}
